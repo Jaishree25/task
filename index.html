@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img class="logo" src="whole.png"
+        /></a>
+
+        <button
+        data-bs-toggle="modal" data-bs-target="#exampleModal"
+          class="navbar-toggler p-2 btn"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Join Group
+        </button>
+        <form class="collapse navbar-collapse form-adjust" role="search">
+          <input
+            id="icon"
+            class="form-control search"
+            type="search"
+            placeholder="Search for your favorite groups in ATG"
+            aria-label="Search"
+          />
+        </form>
+        <div
+          class="collapse navbar-collapse create"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <a class="nav-link active" aria-current="page" href="#" 
+                >Create account.
+                <span class="text-primary"><b>It's free!</b></span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--modal-->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-content">
+          <div class="alert alert-success text-center" role="alert">
+            Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼         
+          </div>
+
+            <div class="row ">
+              
+                <div class="col-md-6">
+                        
+                        <h3 class="modal-title ms-5" id="exampleModalLabel">Sign In</h3>
+                       <div class="container mt-3 ms-4">
+                          <input style = "background-color: #F7F8FA; "class="form-control modalform" type="text" placeholder="Email" aria-label="default input example">
+                          
+                          <input  style = "background-color: #F7F8FA;"class="form-control modalform" type="text" placeholder="Password" aria-label="default input example">
+
+                        <div class="d-grid my-4 ">
+                          <button class="btn btn-primary btnmodal" type="button"><b>Sign In</b></button>
+                         
+                        </div>
+
+                                                    
+                          <input  style = "background-color: #fff; margin-bottom:1vh;"class="form-control modalform text-center" type="text" placeholder="Sign in with Facebook" aria-label="default input example">
+
+
+                          <input  style = "background-color: #fff;" class="form-control modalform modalformslast text-center" type="text" placeholder="Sign in with Google" aria-label="default input example">
+                          <p class=" text-center mt-3 modalpara"> Forgot Password?</p>
+                       </div>
+                       
+                    
+                </div>
+                <div class="col mt-2 sidemodal">          
+                    <p class=" ms-5" style="color: #3D3D3D;">Don’t have an account yet? <span style="color: #2F6CE5;">Create new for free!<span></p>
+                      <img src="sign.png">
+                </div>
+            
+            </div>
+    </div>
+  </div>
+</div>
+<!--modal code ends here-->
+
+    <!--Navbar code ends-->
+
+
+    <!--image-->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active background">
+          <img
+            src="Rectangle 2.png"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+            width="100%">      
+        </img>
+        <div class="container">
+          <div class="carousel-caption d-md-block">
+            <h2>Computer Engineering</h2>
+            <p>142,765 Computer Engineers follow this</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--image code ends here-->
+
+    <!--header-->
+   <header class="p-3">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2" style="color:#000000"><b>All Posts(32)</b></a></li>
+            <li><a href="#" class="nav-link px-2 text-secondary listhide">Article</a></li>
+            <li><a href="#" class="nav-link px-2 text-secondary listhide">Event</a></li>
+            <li><a href="#" class="nav-link px-2 text-secondary listhide">Education</a></li>
+            <li><a href="#" class="nav-link px-2 text-secondary listhide">Job</a></li>
+          </ul>
+  
+      
+          <div class="text-end">
+            <button type="button" class="btn me-2" style="background-color:#EDEEF0;"><b>Write a Post<i class="fa-solid fa-caret-down ms-2" style="color: #000000;"></i></b></button>
+            <button type="button" class="btn btn-primary"><b><i class="fa-solid fa-user-plus me-2" style="color: #ffffff;"></i>Join Group</b></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--header code ends here-->
+
+    <!--card-->
+    <div class="container d-flex justify-content-between"> 
+       <div class="container">
+             <div class="card mt-3 cards">
+      <img src="Rectangle 5.png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h6>✍️<b>Article</b></h6>
+        <h5
+          class="card-title"
+          style="
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 134.167%;
+          "
+        >
+          What if famous brands had regular fonts? Meet RegulaBrands!
+        </h5>
+        <p
+          class="card-text"
+          style="
+            color: #5c5c5c;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 134.167%;
+          "
+        >
+          I’ve worked in UX for the better part of a decade. From now on, I plan
+          to rei…
+        </p>
+        <div style =" align-items: center;" class="container d-flex justify-content-between">
+          <h6
+            class= "color:#000;
+              font-size:
+              18px;
+              font-style:
+              normal;
+              font-weight:
+              600;
+              line-height:
+              normal;
+            "
+          >
+            Sarthak Kamra
+          </h6>
+          <p
+            style="
+              color: #525252;
+              text-align: right;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            "
+          ><i class="fa-solid fa-eye" style="color: #525252;"></i>
+            1.4k views <i class="fa-solid fa-share-nodes" style="color: #0c0d0d;"></i>
+          </p>
+          
+        </div>
+        </div>
+             </div>
+
+             <div class="card mt-3 cards">
+      <img src="Rectangle 5 (1).png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h6>✍️<b>Article</b></h6>
+        <h5
+          class="card-title"
+          style="
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 134.167%;
+          "
+        >
+          What if famous brands had regular fonts? Meet RegulaBrands!
+        </h5>
+        <p
+          class="card-text"
+          style="
+            color: #5c5c5c;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 134.167%;
+          "
+        >
+          I’ve worked in UX for the better part of a decade. From now on, I plan
+          to rei…
+        </p>
+        <div style =" align-items: center;" class="container d-flex justify-content-between">
+          <h6
+            class="
+              color:
+              #000;
+              font-size:
+              18px;
+              font-style:
+              normal;
+              font-weight:
+              600;
+              line-height:
+              normal;
+            "
+          >
+            Sarthak Kamra
+          </h6>
+          <p
+            style="
+              color: #525252;
+              text-align: right;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            "
+          ><i class="fa-solid fa-eye" style="color: #525252;"></i>
+            1.4k views <i class="fa-solid fa-share-nodes" style="color: #0c0d0d;"></i>
+          </p>
+        </div>
+        </div>
+             </div>
+
+             <div class="card mt-3 cards">
+      <img src="Rectangle 5 (2).png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h6>✍️<b>Article</b></h6>
+        <h5
+          class="card-title"
+          style="
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 134.167%;
+          "
+        >
+          What if famous brands had regular fonts? Meet RegulaBrands!
+        </h5>
+        <p
+          class="card-text"
+          style="
+            color: #5c5c5c;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 134.167%;
+          "
+        >
+          I’ve worked in UX for the better part of a decade. From now on, I plan
+          to rei…
+        </p>
+        <div style =" align-items: center;"  class="container d-flex justify-content-between">
+          <h6
+            class="
+              color:
+              #000;
+              font-size:
+              18px;
+              font-style:
+              normal;
+              font-weight:
+              600;
+              line-height:
+              normal;
+            "
+          >
+            Sarthak Kamra
+          </h6>
+          <p
+            style="
+              color: #525252;
+              text-align: right;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            "
+          ><i class="fa-solid fa-eye" style="color: #525252;"></i>
+            1.4k views <i class="fa-solid fa-share-nodes" style="color: #0c0d0d;"></i>
+          </p>
+        </div>
+        </div>
+             </div>
+      </div>
+      <div class="container sidebar">
+            <div class="side">
+              <p  class="para">Noida, India</p>
+              <p style="color:#808080;font-size: 12px; margin-left: 8vw;font-style: normal;font-weight: 400;line-height: normal;">Your location will help us serve better and extend a personalised experience.</p>
+            </div>
+      </div>
+    </div>
+
+    
+
+    <!--card code ends here-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
